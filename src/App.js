@@ -75,8 +75,8 @@ class App extends Component {
   calFaceLoc = (data) => {
     // const cint = data.outputs[0].data.regions[0].region_info.bounding_box;
     // console.log(cint);
+    // console.log(data.outputs[0]);
     return data.outputs[0].data.regions.map(face => {
-      // console.log(face);
       const clarifaiFace = face.region_info.bounding_box;
       const clarifaiFaceID = face.id;
       return {

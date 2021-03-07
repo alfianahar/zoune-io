@@ -4,7 +4,7 @@ import React from 'react';
 const Navigation = ({ onRouteChange, isSignedIn, name, entries }) => {
     if (isSignedIn) {
         return (
-            <nav className='flex justify-between items-center pt-2 px-7 max-h-20'>
+            <nav className='flex justify-between items-center bg-white bg-opacity-10 md:bg-opacity-0 md:px-3 lg:pt-2 lg:px-7'>
                 <div className='flex flex-row py-1 px-2 items-center'>
                     <div className='rounded-full border-t-2 border-l-2 border-b-2 shadow-lg flex justify-center z-10'>
                         <img 

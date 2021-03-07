@@ -58,7 +58,7 @@ class Registration extends React.Component {
         const { onRouteChange } = this.props;
         return(
             <article className='flex justify-center py-5'>       
-                <div className="flex flex-col max-w-md px-4 py-8 bg-white bg-opacity-10 rounded-lg shadow-lg dark:bg-gray-800 sm:px-6 md:px-8 lg:px-10">
+                <div className="flex flex-col w-full max-w-md px-4 py-8 bg-white bg-opacity-10 rounded-lg shadow-lg dark:bg-gray-800 sm:px-6 md:px-8 lg:px-10">
                     <div className="self-center text-xl font-semibold text-white sm:text-2xl dark:text-white">
                         Create a new account
                     </div>

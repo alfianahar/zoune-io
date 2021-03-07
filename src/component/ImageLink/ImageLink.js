@@ -2,7 +2,7 @@ import React from 'react';
 
 const ImageLink = ( { onInputChange, onButtonSubmit}) => {
     return (
-        <div className='flex flex-col w-7/12'>
+        <div className='flex flex-col w-full max-w-lg md:w-10/12 md:max-w-full lg:w-7/12 lg:max-w-full'>
             <p className='font-semibold text-base text-white pb-2'>
                 {'Let me detect your face from, your pictures. Send it below!'}
             </p>
