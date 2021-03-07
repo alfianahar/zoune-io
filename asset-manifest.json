@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/zoune-io/static/css/main.838897a0.chunk.css",
-    "main.js": "/zoune-io/static/js/main.c3d4f1fd.chunk.js",
-    "main.js.map": "/zoune-io/static/js/main.c3d4f1fd.chunk.js.map",
+    "main.css": "/zoune-io/static/css/main.81ff71dc.chunk.css",
+    "main.js": "/zoune-io/static/js/main.4ae37fee.chunk.js",
+    "main.js.map": "/zoune-io/static/js/main.4ae37fee.chunk.js.map",
     "runtime-main.js": "/zoune-io/static/js/runtime-main.0d0f9210.js",
     "runtime-main.js.map": "/zoune-io/static/js/runtime-main.0d0f9210.js.map",
     "static/js/2.305232d9.chunk.js": "/zoune-io/static/js/2.305232d9.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.e12fb03e.chunk.js": "/zoune-io/static/js/3.e12fb03e.chunk.js",
     "static/js/3.e12fb03e.chunk.js.map": "/zoune-io/static/js/3.e12fb03e.chunk.js.map",
     "index.html": "/zoune-io/index.html",
-    "static/css/main.838897a0.chunk.css.map": "/zoune-io/static/css/main.838897a0.chunk.css.map",
+    "static/css/main.81ff71dc.chunk.css.map": "/zoune-io/static/css/main.81ff71dc.chunk.css.map",
     "static/js/2.305232d9.chunk.js.LICENSE.txt": "/zoune-io/static/js/2.305232d9.chunk.js.LICENSE.txt",
     "static/media/Zlogo.e6630e1d.svg": "/zoune-io/static/media/Zlogo.e6630e1d.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.0d0f9210.js",
     "static/js/2.305232d9.chunk.js",
-    "static/css/main.838897a0.chunk.css",
-    "static/js/main.c3d4f1fd.chunk.js"
+    "static/css/main.81ff71dc.chunk.css",
+    "static/js/main.4ae37fee.chunk.js"
   ]
 }
