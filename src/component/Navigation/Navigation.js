@@ -1,5 +1,5 @@
 import React from 'react';
-
+import logout from './power-button-off.svg';
 
 const Navigation = ({ onRouteChange, isSignedIn, name, entries }) => {
     if (isSignedIn) {
@@ -16,29 +16,36 @@ const Navigation = ({ onRouteChange, isSignedIn, name, entries }) => {
                         {name}, Xp: {entries} pts
                     </div>
                 </div>
-                <div className='py-1 px-2 w-1/12'>
-                    <button
-                        onClick={() => onRouteChange('signout')} 
-                        className='text-gray-100 bg-blulight bg-opacity-50 transition duration-300 ease-out transform hover:scale-105 hover:border-transparent hover:text-white hover:bg-red.oth focus:outline-none rounded-md border-2 py-2 px-1 w-full text-sm font-medium'>
-                        Sign Out
-                    </button>
+                <div className='flex flex-row items-center'>
+                    <div className='md:hidden'>
+                        <button className='flex justify-center pr-5'>
+                            <img className="h-8" style={{filter: "invert(53%) sepia(24%) saturate(1380%) hue-rotate(324deg) brightness(95%) contrast(95%)"}} src={logout} alt="logout from flaticon"/>
+                        </button>
+                    </div>
+                    <div className='hidden md:flex md:py-1 md:px-2'>
+                        <button
+                            onClick={() => onRouteChange('signout')} 
+                            className='text-base2 text-base font-semibold md:text-gray-100 md:bg-blulight md:bg-opacity-50 md:transition md:duration-300 md:ease-out md:transform hover:scale-105 hover:border-transparent hover:text-white hover:bg-red.oth focus:outline-none rounded-md md:border-2 py-2 px-2 md:px-4 md:w-full md:text-sm md:font-medium'>
+                            Sign Out
+                        </button>
+                    </div>
                 </div>
             </nav>
         );
     } else {
         return (
-            <nav className='flex justify-end items-center pt-2 pr-7 space-x-4'>
-                <div className='py-1 px-2 w-1/12'>
+            <nav className='flex justify-end items-center w-full max-w-md bg-white bg-opacity-10 rounded-b-lg shadow-lg sm:max-w-full md:bg-opacity-0 md:rounded-none md:shadow-none md:pt-2 md:pr-7 md:space-x-4'>
+                <div className='py-1 px-2'>
                     <button
                     onClick={() => onRouteChange('register')} 
-                    className='text-base2 hover:text-white focus:outline-none py-2 px-4 text-base font-semibold'>
+                    className='text-base2 hover:text-white hover:bg-base1 rounded-md focus:outline-none py-2 px-4 text-base font-semibold'>
                         Register
                     </button>                 
                 </div>
-                <div className='py-1 px-2 w-1/12'>
+                <div className='py-1 px-2'>
                     <button
                     onClick={() => onRouteChange('login')} 
-                    className='text-gray-100 bg-blulight bg-opacity-50 transition duration-300 ease-out transform hover:scale-105 hover:border-transparent hover:text-white hover:bg-red.oth focus:outline-none rounded-md border-2 py-2 px-4 w-full text-sm font-medium'>
+                    className='text-base2 text-base font-semibold md:text-gray-100 md:bg-blulight md:bg-opacity-50 md:transition md:duration-300 md:ease-out md:transform hover:scale-105 hover:border-transparent hover:text-white hover:bg-red.oth focus:outline-none rounded-md md:border-2 py-2 px-4 md:w-full md:text-sm md:font-medium'>
                         Login
                     </button>                 
                 </div>       

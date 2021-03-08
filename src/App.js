@@ -126,7 +126,7 @@ class App extends Component {
     .catch(err => console.log(err))   
   }
 
-  onRouteChange =(route) => {
+  onRouteChange = (route) => {
     if (route === 'signout') {
       this.setState(initialState)
     } else if (route === 'FcrApp') {

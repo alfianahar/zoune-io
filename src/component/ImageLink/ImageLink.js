@@ -8,7 +8,7 @@ const ImageLink = ( { onInputChange, onButtonSubmit}) => {
             </p>
             <div className='w-full bg-blulight bg-opacity-10 flex flex-col justify-center items-center rounded-t-xl shadow-xl p-2'>
                 <input 
-                className='w-9/12 py-1 px-2 my-1 placeholder-opacity-50 rounded-sm focus:outline-none focus:ring-2 focus:ring-base2' 
+                className='w-11/12 md:w-9/12 py-1 px-2 my-1 placeholder-opacity-50 rounded-sm focus:outline-none focus:ring-2 focus:ring-base2' 
                 type="text"
                 onChange={onInputChange}
                 onKeyPress={onButtonSubmit}                  
