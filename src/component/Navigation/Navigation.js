@@ -4,7 +4,7 @@ import logout from './power-button-off.svg';
 const Navigation = ({ onRouteChange, isSignedIn, name, entries }) => {
     if (isSignedIn) {
         return (
-            <nav className='flex justify-between items-center bg-white bg-opacity-10 md:bg-opacity-0 md:px-3 lg:pt-2 lg:px-7'>
+            <nav className='flex justify-between items-center bg-white bg-opacity-10 mb-5 md:mb-0 md:bg-opacity-0 md:px-3 lg:pt-2 lg:px-7'>
                 <div className='flex flex-row py-1 px-2 items-center'>
                     <div className='rounded-full border-t-2 border-l-2 border-b-2 shadow-lg flex justify-center z-10'>
                         <img 
@@ -17,8 +17,10 @@ const Navigation = ({ onRouteChange, isSignedIn, name, entries }) => {
                     </div>
                 </div>
                 <div className='flex flex-row items-center'>
-                    <div className='md:hidden'>
-                        <button className='flex justify-center pr-5'>
+                    <div className='md:hidden pr-5'>
+                        <button 
+                            onClick={() => onRouteChange('signout')} 
+                            className='flex justify-center'>
                             <img className="h-8" style={{filter: "invert(53%) sepia(24%) saturate(1380%) hue-rotate(324deg) brightness(95%) contrast(95%)"}} src={logout} alt="logout from flaticon"/>
                         </button>
                     </div>
@@ -34,11 +36,11 @@ const Navigation = ({ onRouteChange, isSignedIn, name, entries }) => {
         );
     } else {
         return (
-            <nav className='flex justify-end items-center w-full max-w-md bg-white bg-opacity-10 rounded-b-lg shadow-lg sm:max-w-full md:bg-opacity-0 md:rounded-none md:shadow-none md:pt-2 md:pr-7 md:space-x-4'>
+            <nav className='flex justify-end items-center w-full mb-5 md:mb-0    bg-white bg-opacity-10 rounded-b-lg shadow-lg sm:max-w-full md:bg-opacity-0 md:rounded-none md:shadow-none md:pt-2 md:pr-7 md:space-x-4'>
                 <div className='py-1 px-2'>
                     <button
                     onClick={() => onRouteChange('register')} 
-                    className='text-base2 hover:text-white hover:bg-base1 rounded-md focus:outline-none py-2 px-4 text-base font-semibold'>
+                    className='text-base2 hover:text-white hover:bg-red.oth rounded-md focus:outline-none py-2 px-4 text-base font-semibold'>
                         Register
                     </button>                 
                 </div>
